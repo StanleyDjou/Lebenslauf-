@@ -1,13 +1,238 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+main.container{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* =========================
+   LEFT COLUMN
+========================= */
+
+.col-lg-4{
+    background-color: white;
+}
+
+/* =========================
+   RIGHT COLUMN
+========================= */
 
 .column_recht{
     background-color: rgb(175, 175, 202);
+    min-height: 100%;
 }
 
-#Erfahrung{
-    background-color: white;
-   
+/* =========================
+   IMAGE
+========================= */
+
+img{
+    display: block;
+    margin: 25px auto 10px auto;
+    max-width: 220px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
 }
+
+/* =========================
+   SECTION SPACING
+========================= */
+
+#contact,
+#Profil,
+#Fähikeiten,
+#Sprachen,
+#name{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+#Erfahrung,
 #Ausbildung{
-     background-color: white;
-    
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+p,
+li,
+div,
+span{
+    word-wrap: break-word;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress{
+    height: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   SVG ICONS
+========================= */
+
+svg{
+    margin-right: 8px;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media screen and (max-width: 992px){
+
+    main.container{
+        width: 95%;
+    }
+
+    #contact,
+    #Profil,
+    #Fähikeiten,
+    #Sprachen,
+    #name{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .fs-2{
+        font-size: 1.8rem !important;
+    }
+
+    .fs-4{
+        font-size: 1.2rem !important;
+    }
+
+    img{
+        width: 60%;
+    }
+}
+
+/* =========================
+   SMARTPHONE RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .row{
+        flex-direction: column;
+    }
+
+    .col-lg-4,
+    .col-lg-8,
+    .col-6{
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    #contact,
+    #Profil,
+    #Fähikeiten,
+    #Sprachen,
+    #name{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .d-flex{
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 5px;
+    }
+
+    .text-muted{
+        margin-bottom: 10px;
+    }
+
+    .fs-2{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .fs-4{
+        font-size: 1.1rem !important;
+    }
+
+    img{
+        width: 45%;
+        min-width: 140px;
+    }
+
+    ul{
+        padding-left: 18px;
+    }
+}
+
+/* =========================
+   SMALL SMARTPHONE
+========================= */
+
+@media screen and (max-width: 480px){
+
+    body{
+        font-size: 14px;
+    }
+
+    .fs-2{
+        font-size: 1.3rem !important;
+    }
+
+    .fs-4{
+        font-size: 1rem !important;
+    }
+
+    img{
+        width: 55%;
+    }
+
+    #Erfahrung,
+    #Ausbildung{
+        padding: 8px;
+    }
+
+    .progress{
+        height: 8px;
+    }
 }
